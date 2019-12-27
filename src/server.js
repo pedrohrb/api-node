@@ -17,5 +17,6 @@ const teste = mongoose.model('users')
 
 app.use('/site',home)
 
-app.listen(3001)
 
+
+app.listen(process.env.PORT || 3000)
