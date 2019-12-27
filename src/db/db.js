@@ -1,6 +1,6 @@
 import mongoose from 'mongoose'
 
-const conn = mongoose.connect("mongodb://localhost:27017/apinode", {
+const conn = mongoose.connect("mongodb+srv://deploy:2901bina@cluster0-cinvk.mongodb.net/test?retryWrites=true&w=majority", {
  useNewUrlParser: true ,
  useUnifiedTopology: true,
  useCreateIndex: true,
