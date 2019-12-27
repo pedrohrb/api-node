@@ -1,17 +1,17 @@
-import express from 'express'
-import mongoose  from 'mongoose'
+const express = require('express')
+const mongoose = require('mongoose')
 const app = express()
-import cors from 'cors'
+const cors = require('cors')
 app.use(express.json())
 app.use(cors())
-import home from './routes/home/routes'
+const home = require('./routes/home/routes')
 
-import conn from './db/db'
+
+require('./db/db')
 
 //Models 
 
-import './db/models/user'
-
+require('./db/models/user')
 
 const teste = mongoose.model('users')
 

@@ -1,5 +1,5 @@
-import mongoose from 'mongoose'
-import { conn } from '../db'
+const mongoose = require('mongoose')
+require('../db')
 
 const UsersSchema = mongoose.Schema({
     name: {
@@ -16,4 +16,4 @@ const UsersSchema = mongoose.Schema({
     }
 })
 
-export default mongoose.model('users',UsersSchema)
+module.exports = mongoose.model('users',UsersSchema)

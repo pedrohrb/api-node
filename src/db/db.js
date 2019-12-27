@@ -1,4 +1,4 @@
-import mongoose from 'mongoose'
+const mongoose = require('mongoose')
 
 const conn = mongoose.connect("mongodb+srv://deploy:2901bina@cluster0-cinvk.mongodb.net/test?retryWrites=true&w=majority", {
  useNewUrlParser: true ,
@@ -13,4 +13,4 @@ const conn = mongoose.connect("mongodb+srv://deploy:2901bina@cluster0-cinvk.mong
 
 
 
-export default conn
+module.exports = conn

@@ -1,10 +1,10 @@
-import express from 'express'
+const express = require('express')
 const home = express.Router()
-import mongoose from 'mongoose'
-import conn from '../../db/db'
-import '../../db/models/user'
+const mongoose = require('mongoose')
+require('../../db/db')
+require('../../db/models/user')
 
-import newU from '../../db/controllers/usersN'
+const newU = require('../../db/controllers/usersN')
 
 const Users = mongoose.model('users')
 
@@ -32,4 +32,4 @@ home.get('/delete/:id',async (req,res) => {
     return res.json('User deleted')
 })
 
-export default home
+module.exports = home

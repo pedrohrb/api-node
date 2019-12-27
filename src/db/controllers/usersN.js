@@ -1,7 +1,7 @@
-import mongoose from 'mongoose'
-import { conn } from '../db'
+const mongoose = require('mongoose')
+require('../db')
 
-export default function newU(name,email,nickname){
+module.exports = function newU(name,email,nickname){
     var nuser = mongoose.model('users')
 
     new nuser({
