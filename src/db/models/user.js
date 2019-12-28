@@ -13,6 +13,14 @@ const UsersSchema = mongoose.Schema({
     nickname: {
         type: String,
         require: true
+    },
+    postTitle: {
+        type: String,
+        require: true
+    },
+    post: {
+        type: String,
+        require: true
     }
 })
 
